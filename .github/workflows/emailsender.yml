@@ -26,7 +26,7 @@ jobs:
 
 
          - name: 'send email'
-           run: python email.py
+           run: python script.py
            env:
             workflow_name: ${{github.workflow}}
             senders_email: ${{ secrets.SENDERS_EMAIL }} #This variable retrieves the sender's email address from the repository's secrets. It is used to keep sensitive information secure.
